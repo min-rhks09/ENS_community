@@ -38,33 +38,7 @@ function Home() {
     </div>
     <div>
         <button>Go Community</button>
-    </div>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-  <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-
+    </div> 
   </Homest>
   );
 }
