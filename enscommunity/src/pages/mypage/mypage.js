@@ -8,6 +8,8 @@ let Mypagest =  styled.div`
   font-size: 40px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top:2vw;
+  padding-bottom: 2vw;
   background-color: #070617;
 `
 let Pagetitle = styled.div`
