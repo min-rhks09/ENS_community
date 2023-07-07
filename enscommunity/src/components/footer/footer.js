@@ -7,14 +7,14 @@ import logo from './img/logo.png'
 
 
 let Footerst = styled.div`
-position: relative;
-width: 100% !important;
-height: 10%
-background-color: #090F1D;
-color: white;
-text-align: center;
-bottom: 0;
-padding-top: 2vw;
+  position: relative;
+  width: 100% !important;
+  background-color: #090F1D;
+  color: #FFF;
+  text-align: center;
+  bottom: 0;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 `
 
 const Icon = styled.img`
@@ -33,15 +33,11 @@ function Footer() {
     <Footerst>
         <Logo src={logo}/>
         <h4>ENS & Community service</h4>
-        
         <Icon src={git}/>
         <Icon src={mail}/>
         <Icon src={instagram}/>
-        
         <hr/>
         <h4>Copyright © ENN 2023</h4> 
-        
-
     </Footerst>
   );
 }

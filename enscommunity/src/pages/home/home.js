@@ -5,7 +5,11 @@ import styled from 'styled-components'
 import './home.module.css'
 
 let Homest =  styled.div`
+    background-color: #070617;
     color: #ffffff;
+    font-size: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
 `
 
 function Home() {
