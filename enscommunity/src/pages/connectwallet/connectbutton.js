@@ -1,5 +1,6 @@
 import { ethers } from "ethers";
 import { useCallback } from "react";
+import styled from 'styled-components'
 
 const ConnectButton = (props) => {
   const { isConnected, connectWallet, currentBalance, walletAddress } =

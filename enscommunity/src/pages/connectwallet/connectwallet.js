@@ -18,6 +18,10 @@ let Pagetitle = styled.div`
   font-weight: 500;
 `
 
+let Button = styled.button`
+  background-color: #D6EF0E;
+`
+
 function Connectwallet() {
   const downloadmetamask = () => {
     window.open('https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn');
@@ -30,7 +34,7 @@ function Connectwallet() {
   const [chainId, setChainId] = useState(undefined)
   const [isConnected,setIsConnected] = useState(false)
 
-  const connectWallet = useCallback(async () => {
+  const openmetamask = useCallback(async () => {
     try {
       if(typeof window.ethereum !== 'undefined') {
         await getMetamaskData();
@@ -78,20 +82,19 @@ function Connectwallet() {
       CONNECT WALLET
     </Pagetitle>
     <hr/>
-    <div>
-      <button onClick={downloadmetamask}>download Metamask</button>
-    </div>
+    <Button onClick={downloadmetamask}>
+      download Metamask
+    </Button>
 
-    <ConnectButton
+    <Button onClick={openmetamask}>
+    <ConnectButton>
               isConnected={isConnected}
-              connectWallet={connectWallet}
+              connectWallet={openmetamask}
               walletAddress={walletAddress}
               currentBalance={currentBalance}
               chainId={chainId}
-            />
-    
-  
-    
+    </ConnectButton>
+    </Button>
   </Connectwalletst>
   );
 }
