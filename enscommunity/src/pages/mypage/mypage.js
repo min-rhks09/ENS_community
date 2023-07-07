@@ -39,34 +39,8 @@ function Home() {
     <div>
         <button>Go Community</button>
     </div>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-  <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-    <p>eqweqwqw</p>
-
   </Homest>
   );
 }
 
-export default Home;
+export default Mypage;

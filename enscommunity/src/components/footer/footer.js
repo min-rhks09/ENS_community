@@ -1,61 +1,48 @@
 import { useNavigate, Link } from 'react-router-dom';
-import './footer.module.css'
+import styled from 'styled-components'
+import git from './img/giticon.png'
+import instagram from './img/instagramicon.svg'
+import mail from './img/mailicon.svg'
+import logo from './img/logo.png'
+
+
+let Footerst = styled.div`
+position: relative;
+width: 100% !important;
+height: 10%
+background-color: #090F1D;
+color: white;
+text-align: center;
+bottom: 0;
+padding-top: 2vw;
+`
+
+const Icon = styled.img`
+    width: 3vw;
+    height: 3vw;
+    margin: 15px;
+`;
+
+const Logo = styled.img`
+    width: 15vw;
+    height: 5vw;
+`;
 
 function Footer() {
   return (
-    <div class="footer">
-    <div class="contain">
-    <div class="col">
-        <h1>Company</h1>
-        <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-        </ul>
-    </div>
-    <div class="col">
-        <h1>Products</h1>
-        <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-        </ul>
-    </div>
-    <div class="col">
-        <h1>Accounts</h1>
-        <ul>
-        <li>About</li>
-        <li>Mission</li>
-        <li>Services</li>
-        <li>Social</li>
-        <li>Get in touch</li>
-        </ul>
-    </div>
-    <div class="col">
-        <h1>Resources</h1>
-        <ul>
-        <li>Webmail</li>
-        <li>Redeem code</li>
-        <li>WHOIS lookup</li>
-        <li>Site map</li>
-        <li>Web templates</li>
-        <li>Email templates</li>
-        </ul>
-    </div>
-    <div class="col">
-        <h1>Support</h1>
-        <ul>
-        <li>Contact us</li>
-        <li>Web chat</li>
-        <li>Open ticket</li>
-        </ul>
-    </div>
-    </div>
-    </div>
+    <Footerst>
+        <Logo src={logo}/>
+        <h4>ENS & Community service</h4>
+        
+        <Icon src={git}/>
+        <Icon src={mail}/>
+        <Icon src={instagram}/>
+        
+        <hr/>
+        <h4>Copyright © ENN 2023</h4> 
+        
+
+    </Footerst>
   );
 }
 
