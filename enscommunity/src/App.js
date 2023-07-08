@@ -10,6 +10,7 @@ import Mypage from './pages/mypage/mypage';
 import Connectwallet from './pages/connectwallet/connectwallet';
 import Marketcap from './pages/marketcap/marketcap';
 import Makeens from './pages/makeens/makeens';
+import Detail from './pages/makeens/detail';
 
 function App(){
   return (
@@ -18,6 +19,7 @@ function App(){
       <Route path="/" element={ <Home/> }></Route>
       <Route path="/mypage" element={ <Mypage/> }></Route>
       <Route path="/makeens" element={ <Makeens/> }></Route>
+      <Route path="/detail" element={ <Detail/> }></Route>
       <Route path="/marketcap" element={ <Marketcap/> }></Route>
       <Route path="/connectwallet" element={ <Connectwallet/> }></Route>
       <Route path='*' element={<div>not found</div>}></Route>
