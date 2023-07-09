@@ -19,7 +19,7 @@ const ConnectButton = (props) => {
       ) : (
         <div
           className="btn connectButton"
-          onClick={() => connectWallet()}
+      
         >
           Connect Wallet
         </div>
