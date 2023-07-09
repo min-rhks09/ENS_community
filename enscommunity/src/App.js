@@ -11,6 +11,7 @@ import Connectwallet from './pages/connectwallet/connectwallet';
 import Marketcap from './pages/marketcap/marketcap';
 import Makeens from './pages/makeens/makeens';
 import Detail from './pages/makeens/detail';
+import Community from './pages/community/community';
 
 function App(){
   return (
@@ -21,6 +22,7 @@ function App(){
       <Route path="/makeens" element={ <Makeens/> }></Route>
       <Route path="/detail" element={ <Detail/> }></Route>
       <Route path="/marketcap" element={ <Marketcap/> }></Route>
+      <Route path="/community" element={ <Community/> }></Route>
       <Route path="/connectwallet" element={ <Connectwallet/> }></Route>
       <Route path='*' element={<div>not found</div>}></Route>
     </Routes>

@@ -2,27 +2,28 @@ import { ethers } from "ethers";
 import { useCallback } from "react";
 import styled from 'styled-components'
 
+export let Button = styled.button`
+  background-color: #D6EF0E;
+  color: #ffffff;
+  padding: 1vw 1vw 1vw 1vw;
+`
+
 const ConnectButton = (props) => {
-  const { isConnected, connectWallet, currentBalance, walletAddress } =
-    props;
+  const { isConnected, connectWallet, currentBalance, walletAddress } = props;
 
-    const displayWalletAddress = `${walletAddress?.substring(0,10)}...`
-    const displayCurrentBalance = `${currentBalance?.toFixed(4)}`
-
+    const WalletAddress = `${walletAddress?.substring(0,10)}...`
+    const CurrentBalance = `${currentBalance?.toFixed(4)}`
 
   return (
     <>
-      {isConnected ? (
-        <div className="buttonContainer">
-            <span className="pageButtonBold connectButton">{displayWalletAddress}</span>
-        </div>
+      {isConnected ? ( 
+         <Button>
+       {WalletAddress}
+        </Button>
       ) : (
-        <div
-          className="btn connectButton"
-      
-        >
+        <Button>
           Connect Wallet
-        </div>
+        </Button>
       )}
     </>
   );
