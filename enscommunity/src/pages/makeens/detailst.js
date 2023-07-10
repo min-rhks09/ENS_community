@@ -12,3 +12,37 @@ export let Detailst =  styled.div`
 export let Pagetitle = styled.div`
   font-weight: 500;
 `
+
+export let H1 = styled.h1`
+  text-align: center;
+  font-size: 4vw;
+`
+
+export let P = styled.p`
+  text-align: center;
+  font-size: 3vw;
+`
+
+
+export let Input = styled.input`
+  width: 30vw;
+  height: 4vw;
+  font-size: 2vw;
+  border-radius: 10px;
+
+`
+
+export let Center = styled.div`
+  text-align: center;
+  margin:auto;
+`
+
+export let Button =styled.button`
+  width: 10vw;  
+  height: 6vw;
+  font-size: 2vw;
+  color: #ffffff;
+  background-color: #D6EF0E;
+  border-radius: 10px;
+  margin: 2vw 2vw 2vw 2vw;
+`

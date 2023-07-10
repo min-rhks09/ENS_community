@@ -26,7 +26,9 @@ let Icon = styled.img`
   width: ${ props => props.wi };
   height:${ props => props.he };
   margin: auto;
-  display: block;
+  margin-top:2vw;
+  display: flex;
+  justify-content: center;
 `
 
 let P = styled.p`
@@ -116,7 +118,7 @@ function Connectwallet() {
     <Button onClick={downloadmetamask}>
     DOWNLOAD METAMASK
     </Button>
-    <Button onClick={openmetamask}>
+
     <ConnectButton>
               isConnected={isConnected}
               connectWallet={openmetamask}
@@ -124,7 +126,7 @@ function Connectwallet() {
               currentBalance={currentBalance}
               chainId={chainId}
     </ConnectButton>
-    </Button>
+
     </Buttongroup>
 
   <h5>MetaMask 이용하기</h5>

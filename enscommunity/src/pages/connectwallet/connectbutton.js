@@ -6,6 +6,10 @@ export let Button = styled.button`
   background-color: #D6EF0E;
   color: #ffffff;
   padding: 1vw 1vw 1vw 1vw;
+  margin: 2vw 1vw 2vw;1vw;
+  border-radius: 5px;
+  font-size: 2vw;
+  font-weight: 300;
 `
 
 const ConnectButton = (props) => {
