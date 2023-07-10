@@ -12,3 +12,28 @@ export let Makeensst =  styled.div`
 export let Pagetitle = styled.div`
   font-weight: 500;
 `
+
+export let P = styled.p`
+  text-align: center;
+`
+
+
+export let Form = styled.form`
+  text-align: center;
+`
+
+export let Input =styled.input`
+  width: 30vw;
+  height: 6vw;
+  font-size: 2vw;
+  border-radius: 10px;
+  `
+
+export let Button = styled.button`
+  width: 10vw;  
+  height: 6vw;
+  font-size: 2vw;
+  color: #ffffff;
+  background-color: #D6EF0E;
+  border-radius: 10px;
+`

@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import {Link, Route, Routes, useNavigate, Outlet} from 'react-router-dom';
-import { Makeensst, Pagetitle} from './makeensst';
+import { Makeensst, Pagetitle, Input, Button, Form, P} from './makeensst';
 import Detail from './detail';
+import styled from 'styled-components';
 
 
 //user flow: 로그인 with 777 chain - ens page - ens조회 - ens기사용 여부 표시 - 사용가능 - 입력한 ens와 지갑주소 전송 - 둔 ens등록완료 - 마이페이지 이동
@@ -42,19 +43,21 @@ const handleSubmit = (event) => {
 };
 
   return (
-  <Makeensst>
+    <Makeensst>
     <Pagetitle>
       MAKE ENS
     </Pagetitle>
     <hr />
-    <p>조회하기</p>
+    <br/>
+    <P>Search ENS</P>
+    <br/>
     
-    <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleInputChange} />
-      <button type="submit">조회</button>
-    </form>
+    <Form onSubmit={handleSubmit}>
+      <Input type="text" placeholder='Enter your ENS' value={inputValue} onChange={handleInputChange} />
+      <Button type="submit">Search</Button>
+    </Form>
     
-  </Makeensst>
+    </Makeensst>
   );
 }
 
@@ -62,3 +65,4 @@ const handleSubmit = (event) => {
 
 
 export default Makeens;
+
