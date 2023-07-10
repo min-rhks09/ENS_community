@@ -20,6 +20,9 @@ let Pagetitle = styled.div`
 
 let Button = styled.button`
   background-color: #D6EF0E;
+  text-align: center;
+  display: inline-block;
+
 `
 
 function Connectwallet() {
@@ -34,7 +37,7 @@ function Connectwallet() {
   const [chainId, setChainId] = useState(undefined)
   const [isConnected,setIsConnected] = useState(false)
 
-  const openmetamask = useCallback(async () => {
+  const connectwallet = useCallback(async () => {
     try {
       if(typeof window.ethereum !== 'undefined') {
         await getMetamaskData();
@@ -47,6 +50,7 @@ function Connectwallet() {
       console.log(error);
     }
   },[])
+
 
   const getMetamaskData = async () => {
     const _provider = await getProvider();
@@ -86,13 +90,12 @@ function Connectwallet() {
       download Metamask
     </Button>
 
-    <Button onClick={openmetamask}>
-    <ConnectButton>
-              isConnected={isConnected}
-              connectWallet={openmetamask}
-              walletAddress={walletAddress}
-              currentBalance={currentBalance}
-              chainId={chainId}
+    <Button >
+      <ConnectButton onClick={connectwallet}>
+      
+        isConnected={isConnected}
+        walletAddress={walletAddress}
+        currentBalance={currentBalance}
     </ConnectButton>
     </Button>
   </Connectwalletst>

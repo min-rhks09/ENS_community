@@ -1,9 +1,10 @@
 import { ethers } from "ethers";
 import { useCallback } from "react";
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Connectwallet from './connectwallet';
 
 const ConnectButton = (props) => {
-  const { isConnected, connectWallet, currentBalance, walletAddress } =
+  const { isConnected, connectwallet, currentBalance, walletAddress} =
     props;
 
     const displayWalletAddress = `${walletAddress?.substring(0,10)}...`
@@ -19,7 +20,7 @@ const ConnectButton = (props) => {
       ) : (
         <div
           className="btn connectButton"
-          onClick={() => connectWallet()}
+          onClick={() => Connectwallet()}
         >
           Connect Wallet
         </div>
