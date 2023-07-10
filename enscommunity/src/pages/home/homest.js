@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 
+
+
+
 export let Homest =  styled.div`
     background-color: #070617;
     color: #ffffff;
@@ -14,14 +17,14 @@ export let Homest =  styled.div`
     overscroll-behavior: none;
 `
 
- export let Title = styled.div`
-text-align: center;
-width: 100%;
-height: auto;
-font-size: 10vw;
-font-weight: bold;
-background-color:#070617;
-color:#FFF;
+export let Title = styled.div`
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 10vw;
+    font-weight: bold;
+    background-color:#070617;
+    color:#FFF;
 `
 
 
