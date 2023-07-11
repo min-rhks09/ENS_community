@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {Link, Route, Routes, useNavigate, Outlet} from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import ensnft from './img/ens1.png';
-import { Mypagest, Pagetitle, Box, Nft } from './style';
+import { Mypagest, Pagetitle, Box, Nft } from './mypagest';
 
 function Mypage() {
   return (

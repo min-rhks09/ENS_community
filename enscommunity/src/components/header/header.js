@@ -17,7 +17,6 @@ function Header() {
         <Logo src={logo}/>
         <Link to='/'>Home</Link>
         <Link to='/makeens'>Make ENS</Link>
-        <Link to='/market'>Market</Link>
         <Link to='/community'>Community</Link>
         <Link to='/marketcap'>MarketCap</Link>
         <Link to='/connectwallet'>Connect Wallet</Link>
