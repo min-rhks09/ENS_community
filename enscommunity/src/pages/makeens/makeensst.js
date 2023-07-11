@@ -13,8 +13,14 @@ export let Pagetitle = styled.div`
   font-weight: 500;
 `
 
+export let H1 = styled.h1`
+  text-align: center;
+  font-size: 5vw;
+`
+
 export let P = styled.p`
   text-align: center;
+  font-size: 2vw;
 `
 
 
@@ -22,7 +28,7 @@ export let Form = styled.form`
   text-align: center;
 `
 
-export let Input =styled.input`
+export let Input = styled.input`
   width: 30vw;
   height: 6vw;
   font-size: 2vw;
@@ -36,4 +42,5 @@ export let Button = styled.button`
   color: #ffffff;
   background-color: #D6EF0E;
   border-radius: 10px;
+  margin-bottom: 2vw;
 `

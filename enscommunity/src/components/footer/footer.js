@@ -36,7 +36,8 @@ function Footer() {
         <Icon src={git}/>
         <Icon src={mail}/>
         <Icon src={instagram}/>
-        <hr/>
+        <h5>version 0.1.0</h5>
+        <br/><hr/>
         <h4>Copyright © ENN 2023</h4> 
     </Footerst>
   );
